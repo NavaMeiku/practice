@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О Мособлгазе</title>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=ВАШ_API_КЛЮЧ" type="text/javascript"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/Icon.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<header>
+    <button class="toggle-button" id="toggleButton">☰</button>
+</header>
+
+<body>
+
+
+
+    <div class="sidebar" id="sidebar">
+        <a href="index.html" class="logo" id="logoLink"><img src="img/Logo.svg" alt="Мособлгаз"></a>
+        <a href="index.html">Главная</a>
+        <a href="AboutUs.html" class="active">О нас</a>
+        <a href="employee.html">Сотрудники</a>
+    </div>
+
+    <div class="content" id="content">
+        <h2>Наши партнёры</h2>
+        <p>За долгие годы работы у Мособлгаза сформировался обширный круг поставщиков, установлены тесные партнерские
+            отношения со многими из них.<br>
+            Тем не менее, компания заинтересована в постоянном расширении круга поставщиков, отдавая предпочтение
+            длительным отношениям и, конечно, качеству закупаемой продукции.</p>
+        <div class="employeeList">
+            <div class="partner">
+                <div class="partnerIcon">
+                    <img src="img/partners/MosoblgazTekhnika.PNG" alt="ООО «Мособгазтехника»">
+                </div>
+                <h3>ООО «Мособгазтехника»</h3>
+                <a href="https://www.mog-t.ru/">https://www.mog-t.ru/</a><br>
+                <div class="partnerInfo">ООО «Мособгазтехника» - дочерняя компания АО «Мособлгаз».
+                    <br>
+                    Компания занимается производством настенных, напольных, электрических котлов и проточных
+                    водонагревателей, датчиков газовой безопасности, системы «Безопасный дом» и блочно-модульных
+                    котельных. А так же организацией региональной дилерской сети и авторизацией сервисных центров по
+                    всей России и СНГ.
+                </div>
+            </div>
+            <div class="partner">
+                <div class="partnerIcon">
+                    <img src="img/partners/MosoblgazStroy.png" alt="ООО «Мособлгазстрой»">
+                </div>
+                <h3>ООО «Мособлгазстрой»</h3>
+                <a href="https://stroy.mosoblgaz.ru/">https://stroy.mosoblgaz.ru/</a><br>
+                <div class="partnerInfo">ООО «Мособлгазстрой» - дочерняя компания АО «Мособлгаз», которая занимает одну
+                    из ключевых позиций в сфере подключения к газовой сети объектов, расположенных на территории
+                    Московской области и Новой Москвы.
+                    <br>
+                    Выполнение проектных и строительных работ "под ключ" являются основными видами деятельности
+                    компании.
+                </div>
+            </div>
+            <div class="partner">
+                <div class="partnerIcon">
+                    <img src="img/partners/Otoplenich.PNG" alt="ООО «Отопленыч»">
+                </div>
+                <h3>ООО «Отопленыч»</h3>
+                <a href="https://otoplenych.ru/">https://otoplenych.ru/</a><br>
+                <div class="partnerInfo">Основным видом деятельности компании ООО «Отопленыч» является монтаж
+                    отопительных систем и систем вентиляции. Компания оказывает услуги на территории Московской области
+                    по замене, монтажу газоиспользующего оборудования и систем отопления в рамках проекта АО «Мособлгаз»
+                    «Отопление под ключ».</div>
+            </div>
+            <div class="partner">
+                <div class="partnerIcon">
+                    <img src="img/partners/Terem.PNG" alt="ООО «Терем»">
+                </div>
+                <h3>ООО «Терем»</h3>
+                <a href="https://www.teremopt.ru/">https://www.teremopt.ru/</a><br>
+                <div class="partnerInfo">Торговая компания «ТЕРЕМ» успешно работает на российском рынке инженерного
+                    оборудования с 1991 года. "ТЕРЕМ" — официальный дистрибьютор ведущих европейских производителей
+                    теплотехнического оборудования. Основные направления работы компании «ТЕРЕМ» — продажа оборудования
+                    для систем водоснабжения, отопления и канализации.</div>
+            </div>
+            <div class="partner">
+                <div class="partnerIcon">
+                    <img src="img/partners/Esko.png" alt="ООО «Энергосервисная компания»">
+                </div>
+                <h3>ООО «Энергосервисная компания»</h3>
+                <a href="https://energo-esco.ru/">https://energo-esco.ru/</a><br>
+                <div class="partnerInfo">ООО «Энергосервисная компания» – проектно-монтажная организация, основанная 07
+                    апреля 2010 года. На территории Московской области компания оказывает услуги по замене
+                    газоиспользующего оборудования в рамках проекта АО «Мособлгаз» «Трейд-ин».</div>
+            </div>
+            <div class="partner">
+                <div class="partnerIcon">
+                    <img src="img/partners/KDNavien.png" alt="NAVIEN">
+                </div>
+                <h3>NAVIEN</h3>
+                <a href="https://www.navien.ru">https://www.navien.ru</a><br>
+                <div class="partnerInfo">Компания «Kyung Dong NAVIEN» поставляет на российский рынок под маркой «NAVIEN»
+                    двухконтурные настенные и напольные газовые котлы, а также двухконтурные напольные жидкотопливные
+                    котлы, адаптированные к российским условиям эксплуатации.
+                    <br>
+                    Котлы «NAVIEN» соответствуют всем нормам и стандартам, принятым на территории Российской Федерации,
+                    и имеют соответствующие сертификаты.
+                </div>
+            </div>
+            <div class="partner">
+                <div class="partnerIcon">
+                    <img src="img/partners/ArielPlastcomplect.jpg" alt="Ариэль Пласткомплект">
+                </div>
+                <h3>Ариэль Пласткомплект</h3>
+                <div class="partnerInfo">Компания Ариэль Пласткомплект, входит в группу компаний Ариэль, имеющую более
+                    чем 25-летнюю историю, собственные производственные и складские мощности, сложившиеся деловые
+                    традиции ведения бизнеса. Компания является генеральным дистрибьютором продукции Friatec AG
+                    (Германия) на территории Российской Федерации.</div>
+            </div>
+            <div class="partner">
+                <div class="partnerIcon">
+                    <img src="img/partners/PolyPlastic.png" alt="Polyplastic">
+                </div>
+                <h3>Polyplastic</h3>
+                <a href="https://www.polyplastic.ru">https://www.polyplastic.ru</a><br>
+                <div class="partnerInfo">Группа ПОЛИПЛАСТИК — лидер в разработке и производстве полимерных труб и
+                    инженерных пластмасс в странах СНГ. Компания осуществляет полную комплектацию поставок: литые,
+                    электросварные, сегментные ПЭ фитинги, а также полиэтиленовые колодцы производятся на заводах
+                    группы.</div>
+            </div>
+            <div class="partner">
+                <div class="partnerIcon">
+                    <img src="img/partners/Gefest.png" alt="Гефест">
+                </div>
+                <h3>Гефест</h3>
+                <a href="https://www.gefest.com/">https://www.gefest.com/</a><br>
+                <div class="partnerInfo">GEFEST - холдинг, который занимается выпуском современной кухонной бытовой
+                    техники с высокими потребительскими свойствами. Ежегодный выпуск стационарных плит составляет 900
+                    000 единиц. Компания GEFEST постоянно развивает потребительские, эстетические и эргономические
+                    свойства своей продукции.</div>
+            </div>
+            <div class="partner">
+                <div class="partnerIcon">
+                    <img src="img/partners/Broen.png" alt="БРОЕН">
+                </div>
+                <h3>БРОЕН</h3>
+                <a href="https://www.broen.ru">https://www.broen.ru</a><br>
+                <div class="partnerInfo">Компания БРОЕН в России представляет продукцию пяти направлений: запорная
+                    арматура для систем теплоснабжения и газораспределения, балансировочная, регулирующая,
+                    санитарно-техническая арматура, а также оборудование для лабораторий.</div>
+            </div>
+            <div class="partner">
+                <div class="partnerIcon">
+                    <img src="img/partners/Ferroli.png" alt="Ferroli (Италия)">
+                </div>
+                <h3>Ferroli (Италия)</h3>
+                <a href="https://service.ferroli.ru/">https://service.ferroli.ru/</a><br>
+                <div class="partnerInfo">Сегодня FERROLI GROUP — это 14 заводов в Италии, Испании, Германии, Польше,
+                    Турции и Китае, а также 12 коммерческих предприятий в Италии, Испании, Китае, Франции, Турции,
+                    Польше, Румынии, Нидерландах, Бельгии и Великобритании. В настоящее время в FERROLI занято свыше
+                    3200 сотрудников.</div>
+            </div>
+            <div class="partner">
+                <div class="partnerIcon">
+                    <img src="img/partners/Vaillant.jpg" alt="Vaillant (Германия)">
+                </div>
+                <h3>Vaillant (Германия)</h3>
+                <a href="https://www.vaillant.ru">https://www.vaillant.ru</a><br>
+                <div class="partnerInfo">Компания Vaillant - один из ведущих производителей отопительной техники из
+                    Германии - поставляет на российский рынок большой выбор немецкого оборудования для отопления и
+                    горячего водоснабжения. Vaillant – это 140 лет опыта и инноваций производства отопительного
+                    оборудования.</div>
+            </div>
+            <div class="partner">
+                <div class="partnerIcon">
+                    <img src="img/partners/OAOBorinskoe.png" alt="ОАО «Боринское» (Россия)">
+                </div>
+                <h3>ОАО «Боринское» (Россия)</h3>
+                <a href="http://www.borino.ru/">http://www.borino.ru/</a><br>
+                <div class="partnerInfo">ОАО «Боринское» является производителем более 30 наименований и модификаций
+                    газового отопительного оборудования теплопроизводительностью от 7 до 100 кВт.
+                    <br>Деятельность завода отмечена дипломами лауреата конкурса «100 лучших товаров России»,
+                    благодарственными письмами, сертификатами ЖКХ различных регионов.
+                </div>
+            </div>
+            <div class="partner">
+                <h3>ООО «Мои Платежи»</h3>
+                <div class="partnerInfo">В сотрудничестве с АО «Мособлгаз» по проекту «Трейд-ин» компания оказывает
+                    услугу по вывозу и утилизации изношенного газового оборудования.</div>
+            </div>
+        </div>
+        <h2>Ступинский филиал</h2>
+        <div id="map"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+<footer>
+    <div class="download-icons">
+        <a href="https://apps.rustore.ru/app/ru.mosoblgaz" target="_blank"><img src="img/rustore.svg"></a>
+        <a href="https://itunes.apple.com/ru/app/licnyj-kabinet-castnogo-abonenta/id893083949?mt=8&uo=4"
+            target="_blank"><img class="fa-brands fa-apple" src="img/App_Store.svg"></a>
+    </div>
+    <div class="social-icons">
+        <a href="https://t.me/mosoblgaz_official" target="_blank"><img src="img/Telegram.svg"></a>
+        <a href="https://vk.com/mosoblgaz" target="_blank"><img src="img/Vk.svg"></a>
+    </div>
+</footer>
+
+</html>
