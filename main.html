@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=ВАШ_API_КЛЮЧ" type="text/javascript"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/Icon.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<header>
+    <button class="toggle-button" id="toggleButton">☰</button>
+</header>
+
+<body>
+    <div class="sidebar" id="sidebar">
+        <a href="main.html" class="logo" id="logoLink"><img src="img/Logo.svg" alt="Мособлгаз"></a>
+        <a href="main.html" class="active">Главная</a>
+        <a href="AboutUs.html">О нас</a>
+        <a href="employee.html">Сотрудники</a>
+    </div>
+    <div class="content" id="content">
+        <h1>О филиале</h1>
+        <div class="container">
+            <h2>Банковские реквизиты</h2>
+            <div class="reqvisit">
+                <div class="riqvisitInfo">
+                    <div class="riqvisitLeft">ИНН</div>
+                    <div class="riqvisitRight">5032292612</div>
+                </div>
+                <div class="riqvisitInfo">
+                    <div class="riqvisitLeft">КПП</div>
+                    <div class="riqvisitRight">503643001</div>
+                </div>
+                <div class="riqvisitInfo">
+                    <div class="riqvisitLeft">р/с</div>
+                    <div class="riqvisitRight">40602810640330100056</div>
+                </div>
+                <div class="riqvisitInfo">
+                    <div class="riqvisitLeft">к/с</div>
+                    <div class="riqvisitRight">30101810400000000225</div>
+                </div>
+                <div class="riqvisitInfo">
+                    <div class="riqvisitLeft">БИК</div>
+                    <div class="riqvisitRight">044525225</div>
+                </div>
+                <div class="riqvisitInfo">
+                    <div class="riqvisitLeft">Банк:</div>
+                    <div class="riqvisitRight">Сбербанк России, г. Москва, Подольское ОСБ № 2573</div>
+                </div>
+                <div class="riqvisitInfo">
+                    <div class="riqvisitLeft">Адрес банка:</div>
+                    <div class="riqvisitRight">Московская область, г. Подольск, ул. Кирова, д.21</div>
+                </div>
+            </div>
+            <h2>Зоны обслуживания</h2>
+            <ul>Городские округа:<p></p>
+                <li>Подольск;</li>
+                <li>Климовск;</li>
+                <li>Ступино;</li>
+                <li>Чехов;</li>
+                <li>Пущино;</li>
+                <li>Протвино;</li>
+                <li>Кашира;</li>
+                <li>Серебряные Пруды;</li>
+                <li>Зарайск;</li>
+                <li>Домодедово;</li>
+                <li>Ленинский;</li>
+                <li>Серпуховcкий</li>
+            </ul>
+            <h2>Главный офис</h2>
+            <div id="map2"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+<footer>
+    <div class="download-icons">
+        <a href="https://apps.rustore.ru/app/ru.mosoblgaz" target="_blank"><img src="img/rustore.svg"></a>
+        <a href="https://itunes.apple.com/ru/app/licnyj-kabinet-castnogo-abonenta/id893083949?mt=8&uo=4"
+            target="_blank"><img class="fa-brands fa-apple" src="img/App_Store.svg"></a>
+    </div>
+    <div class="social-icons">
+        <a href="https://t.me/mosoblgaz_official" target="_blank"><img src="img/Telegram.svg"></a>
+        <a href="https://vk.com/mosoblgaz" target="_blank"><img src="img/Vk.svg"></a>
+    </div>
+</footer>
+
+</html>
